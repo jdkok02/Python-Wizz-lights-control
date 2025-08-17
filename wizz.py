@@ -1,7 +1,7 @@
 import asyncio
 from pywizlight import wizlight, PilotBuilder
 
-lamp_ip = '192.168.1.40'           # .40 - 116
+lamp_ip = '192.168.1.x'     
 lamp_brightness = 100               # 10 - 250
 
 async def set_lamp(state):
@@ -15,5 +15,6 @@ async def set_lamp(state):
         print("Lamp is uit.")
 
 lamp_status = 'on'
+
 
 asyncio.run(set_lamp(lamp_status))

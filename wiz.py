@@ -14,7 +14,8 @@ async def set_lamp(state):
         await lamp.turn_off()
         print("Lamp is uit.")
 
-lamp_status = 'on'
+lamp_status = 'on'                # on - off
 
 
 asyncio.run(set_lamp(lamp_status))
+
